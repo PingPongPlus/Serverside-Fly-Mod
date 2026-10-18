@@ -1,4 +1,5 @@
-# Server-side Fly Mod
+# Server-side Fly Mod 
+https://modrinth.com/mod/fly-mod
 
 Fabric mod for **Minecraft 26.3**. Install on the server; vanilla clients supported.
 Requires Java 25+, Fabric Loader 0.19.5+, and Fabric API 0.163.0+26.3.
