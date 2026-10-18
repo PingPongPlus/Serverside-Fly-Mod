@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="392" viewBox="0 0 960 392" role="img" aria-labelledby="title description">
+  <title id="title">Server-Side Fly Mod cumulative downloads since release</title>
+  <desc id="description">Green line chart of cumulative Modrinth downloads, using monthly period ends from January 2025 through 18 October 2026. The total reaches 3,396 downloads. Background is transparent.</desc>
+  <metadata>{"source":"Modrinth analytics, grouped by month","project":"Server-Side Fly Mod","project_url":"https://modrinth.com/mod/fly-mod","export_range":["2024-10-30","2026-10-18"],"date_basis":"Period ends from the export; years resolved using the chart tooltip and reporting range.","series":[{"period_end":"2025-01-01","downloads":0,"cumulative_downloads":0},{"period_end":"2025-02-01","downloads":251,"cumulative_downloads":251},{"period_end":"2025-03-04","downloads":257,"cumulative_downloads":508},{"period_end":"2025-04-04","downloads":280,"cumulative_downloads":788},{"period_end":"2025-05-06","downloads":554,"cumulative_downloads":1342},{"period_end":"2025-06-06","downloads":421,"cumulative_downloads":1763},{"period_end":"2025-07-07","downloads":285,"cumulative_downloads":2048},{"period_end":"2025-08-07","downloads":217,"cumulative_downloads":2265},{"period_end":"2025-09-07","downloads":136,"cumulative_downloads":2401},{"period_end":"2025-10-09","downloads":110,"cumulative_downloads":2511},{"period_end":"2025-11-09","downloads":106,"cumulative_downloads":2617},{"period_end":"2025-12-10","downloads":133,"cumulative_downloads":2750},{"period_end":"2026-01-10","downloads":145,"cumulative_downloads":2895},{"period_end":"2026-02-11","downloads":107,"cumulative_downloads":3002},{"period_end":"2026-03-14","downloads":104,"cumulative_downloads":3106},{"period_end":"2026-04-14","downloads":45,"cumulative_downloads":3151},{"period_end":"2026-05-15","downloads":49,"cumulative_downloads":3200},{"period_end":"2026-06-15","downloads":32,"cumulative_downloads":3232},{"period_end":"2026-07-17","downloads":34,"cumulative_downloads":3266},{"period_end":"2026-08-17","downloads":32,"cumulative_downloads":3298},{"period_end":"2026-09-17","downloads":35,"cumulative_downloads":3333},{"period_end":"2026-10-18","downloads":63,"cumulative_downloads":3396}]}</metadata>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #656d76; }
+    .heading { fill: #24292f; font-size: 18px; font-weight: 600; }
+    .label { font-size: 13px; }
+    .tick { font-size: 12px; }
+    .grid { stroke: #656d76; stroke-opacity: .18; stroke-width: 1; }
+    .line { fill: none; stroke: #16a34a; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    .green { fill: #16a34a; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #9199a3; }
+      .heading { fill: #e6edf3; }
+      .grid { stroke: #9199a3; }
+      .line { stroke: #1bd96a; }
+      .green { fill: #1bd96a; }
+    }
+  </style>
+  <text class="heading" x="64" y="29">Cumulative downloads</text>
+  <text class="label" x="892" y="29" text-anchor="end">Through 18 Oct 2026</text>
+  <circle class="green" cx="69" cy="56" r="4"/>
+  <text class="label" x="82" y="60">Server-Side Fly Mod</text>
+  <line class="grid" x1="64" y1="320.00" x2="892" y2="320.00"/>
+  <text class="tick" x="52" y="324.00" text-anchor="end">0</text>
+  <line class="grid" x1="64" y1="254.86" x2="892" y2="254.86"/>
+  <text class="tick" x="52" y="258.86" text-anchor="end">1,000</text>
+  <line class="grid" x1="64" y1="189.71" x2="892" y2="189.71"/>
+  <text class="tick" x="52" y="193.71" text-anchor="end">2,000</text>
+  <line class="grid" x1="64" y1="124.57" x2="892" y2="124.57"/>
+  <text class="tick" x="52" y="128.57" text-anchor="end">3,000</text>
+  <text class="tick" x="64.00" y="345" text-anchor="start">Jan 2025</text>
+  <text class="tick" x="177.77" y="345" text-anchor="middle">Apr 2025</text>
+  <text class="tick" x="292.81" y="345" text-anchor="middle">Jul 2025</text>
+  <text class="tick" x="409.11" y="345" text-anchor="middle">Oct 2025</text>
+  <text class="tick" x="525.40" y="345" text-anchor="middle">Jan 2026</text>
+  <text class="tick" x="639.18" y="345" text-anchor="middle">Apr 2026</text>
+  <text class="tick" x="754.21" y="345" text-anchor="middle">Jul 2026</text>
+  <text class="tick" x="892.00" y="345" text-anchor="end">Oct 2026</text>
+  <path class="line" d="M 64.00,320.00 C 77.06,314.55 90.13,309.16 103.19,303.65 C 116.25,298.13 129.31,292.73 142.38,286.91 C 155.44,281.09 168.50,276.65 181.56,268.67 C 195.05,260.43 208.53,243.15 222.02,232.58 C 235.08,222.34 248.14,212.53 261.20,205.15 C 274.27,197.77 287.33,191.94 300.39,186.59 C 313.45,181.24 326.52,176.08 339.58,172.45 C 352.64,168.82 365.70,166.19 378.77,163.59 C 392.25,160.91 405.73,158.81 419.22,156.43 C 432.28,154.12 445.34,152.08 458.41,149.52 C 471.47,146.96 484.53,143.87 497.59,140.86 C 510.66,137.84 523.72,134.04 536.78,131.41 C 550.27,128.70 563.75,126.77 577.23,124.44 C 590.30,122.19 603.36,119.03 616.42,117.67 C 629.48,116.30 642.55,115.75 655.61,114.73 C 668.67,113.72 681.73,112.38 694.80,111.54 C 707.86,110.70 720.92,110.16 733.98,109.46 C 747.47,108.73 760.95,107.97 774.44,107.24 C 787.50,106.54 800.56,105.88 813.62,105.16 C 826.69,104.43 839.75,103.86 852.81,102.88 C 865.87,101.90 878.94,100.14 892.00,98.77"/>
+  <circle class="green" cx="892" cy="98.77" r="4"/>
+  <text class="green" x="892" y="85.77" text-anchor="end" font-size="16" font-weight="600">3,396</text>
+  <text class="tick" x="64" y="377">Monthly analytics snapshots · Source: Modrinth</text>
+</svg>

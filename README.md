@@ -4,6 +4,12 @@ https://modrinth.com/mod/fly-mod
 Fabric mod for **Minecraft 26.3**. Install on the server; vanilla clients supported.
 Requires Java 25+, Fabric Loader 0.19.5+, and Fabric API 0.163.0+26.3.
 
+## Downloads since release
+
+![Cumulative Modrinth downloads since release, reaching 3,396 on 18 October 2026](docs/assets/downloads.svg)
+
+Monthly download history from [Modrinth](https://modrinth.com/mod/fly-mod), shown cumulatively. Snapshot: 18 October 2026.
+
 ## Commands
 
 Flight is available to everyone by default. Each player's toggle is independent.
