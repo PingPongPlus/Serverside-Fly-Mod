@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "flymod_test",
+  "version": "1.0.0",
+  "name": "Fly Mod regression tests",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-gametest": ["pingplus.flyhacks.FlyGameTests"]
+  },
+  "depends": {
+    "flymod": "*"
+  }
+}

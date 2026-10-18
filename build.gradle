@@ -1,0 +1,64 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+}
+
+processResources {
+    inputs.properties(version: project.version, minecraft_version: project.minecraft_version,
+            loader_version: project.loader_version, fabric_api_version: project.fabric_api_version)
+    filesMatching('fabric.mod.json') {
+        expand(inputs.properties)
+    }
+}
+
+sourceSets {
+    testmod {
+        compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
+        runtimeClasspath += sourceSets.main.runtimeClasspath + sourceSets.main.output
+    }
+}
+
+loom {
+    splitEnvironmentSourceSets()
+    mods {
+        flymod {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+        flymod_test {
+            sourceSet sourceSets.testmod
+        }
+    }
+    runs {
+        gametest {
+            server()
+            name 'Fly Mod GameTests'
+            source sourceSets.testmod
+            vmArg '-Dfabric-api.gametest'
+            vmArg "-Dfabric-api.gametest.report-file=${layout.buildDirectory.file('gametest-results.xml').get().asFile}"
+            runDir 'build/gametest'
+        }
+    }
+}
+
+tasks.named('check') {
+    dependsOn 'runGametest'
+}
